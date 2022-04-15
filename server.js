@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello").sendStatus(200);
+  res.send("Hello").status(200);
   res.end();
 });
 
